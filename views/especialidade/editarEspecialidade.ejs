@@ -1,0 +1,86 @@
+<<<<<<< HEAD
+<%- include('../partials/header.ejs') %>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h3>EDITAR DE ESPECIALIDADE</h3>
+            </div>
+
+            <div class="card-body">
+
+                <form action="http://localhost:3001/editarEspecialidade"
+                method="post">
+
+                    <label for="nome_especialidade"></label>
+
+                    <input class="form-control" type="text" 
+                    name="nome_especialidade" id="nome_especialidade"
+                    value="<%= especialidade.nome_especialidade %>"
+                    placeholder="NOME DA ESPECIALIDADE">
+
+                    <input type="hidden" name="id" 
+                    value="<%= especialidade.id %>">
+
+                    <button class="btn btn-success mt-2">EDITAR</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<%- include('../partials/footer.ejs') %>
+
+=======
+<%- include('../partials/header.ejs') %>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h5 class="card-title">EDITAR ESPECIALIDADE</h5>
+            </div>
+
+            <div class="card-body">
+
+                <form action="http://localhost:3001/editarEspecialidades"
+                method="post">
+
+                    <label for="nome_especialidade"></label>
+
+                    <input class="form-control" type="text" 
+                    name="nome_especialidade" id="nome_especialidade"
+                    value="<%= especialidade.nome_especialidade %>"
+                    placeholder="NOME DA ESPECIALIDADE">
+
+                    <input type="hidden" name="id" 
+                    value="<%= especialidade.id %>">
+
+                    <button class="btn btn-success mt-2">EDITAR</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<%- include('../partials/footer.ejs') %>
+
+>>>>>>> eff7087 (Alterções)
+</html>

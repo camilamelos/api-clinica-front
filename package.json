@@ -1,0 +1,46 @@
+{
+<<<<<<< HEAD
+  "name": "front-api-clinica",
+  "version": "1.0.0",
+  "description": "FRONT-END DE CONSUMO DA API CLINICA",
+=======
+  "name": "pw3-atividade-frontend",
+  "version": "1.0.0",
+  "description": "AtividadeAndressa FrontEnd PW3",
+>>>>>>> eff7087 (Alterções)
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+<<<<<<< HEAD
+    "PW3",
+    "NODE",
+    "JS",
+    "ETEC",
+    "DE",
+    "BARUERI",
+    "CLINICA"
+  ],
+  "author": "CAMILA MELO DA SILVA",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+=======
+    "Pw3"
+  ],
+  "author": "Andressa Santos de Lima",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+>>>>>>> eff7087 (Alterções)
+    "nodemon": "^2.0.16"
+  }
+}

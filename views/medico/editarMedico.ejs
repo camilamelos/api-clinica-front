@@ -1,0 +1,65 @@
+<%- include('../partials/header.ejs') %>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h5 class="card-title">EDITAR MÉDICO</h5>
+            </div>
+
+            <div class="card-body">
+
+                <form action="http://localhost:3001/editarMedicos"
+                method="post">
+
+                <label for="nome_medico"></label>
+                <input class="form-control" type="text" 
+                name="nome_medico" id="nome_medico"
+                value="<%= medico.nome_medico %>"
+                placeholder="NOME DO MÉDICO">
+
+                <label for="email_medico"></label>
+                <input class="form-control" type="text" 
+                name="email_medico" id="email_medico"
+                value="<%= medico.email_medico %>"
+                placeholder="EMAIL DO MÉDICO">
+
+                <label for="telefone_medico"></label>
+                <input class="form-control" type="text" 
+                name="telefone_medico" id="telefone_medico"
+                value="<%= medico.telefone_medico %>"
+                placeholder="TELEFONE DO MÉDICO">
+
+                <label for="celular_medico"></label>
+                <input class="form-control" type="text" 
+                name="celular_medico" id="celular_medico"
+                value="<%= medico.celular_medico %>"
+                placeholder="CELULAR DO MÉDICO">
+
+                <label for="tblEspecialidadeId"></label>
+                <input class="form-control" type="text" 
+                name="tblEspecialidadeId" id="tblEspecialidadeId"
+                value="<%= medico.tblEspecialidadeId %>"
+                placeholder="CODIGO MÉDICO">
+                
+                <input type="hidden" name="id" 
+                value="<%= especialidade.id %>">
+
+                    <button class="btn btn-success mt-2">EDITAR</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<%- include('../partials/footer.ejs') %>
+
+</html>

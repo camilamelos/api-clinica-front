@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs') %>
+
+	<body>
+
+		<div class="container">
+
+			<div class="card text-center">
+				<div class="card-header">
+					<h5 class="card-title">LISTAGEM DE ESPECIALIDADES</h5>
+				</div>
+			</div>
+			
+			<% especialidades.forEach(especialidade=>{ %>
+				<div class="card mt-2 ">
+					<div class="card-body">
+						<%= especialidade.nome_especialidade %>
+					</div>
+				<div>
+					<a href="/editarEspecialidades/<%= especialidade.id %>" class="btn btn-success ml-4 mb-2">EDITAR</a>
+				</div>
+				</div>
+
+			<%  }); %>
+
+		</div>
+
+	</body>
+
+	<%- include('../partials/footer.ejs') %>
+
+</html>

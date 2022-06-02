@@ -1,0 +1,72 @@
+<%- include('../partials/header.ejs') %>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h3>CADASTRO DE MÉDICO</h3>
+            </div>
+
+            <div class="card-body">
+
+                <form action="http://localhost:3000/medico/cadastrarMedico" 
+                method="post">
+
+                    <label for="nome_medico"></label>
+                    <input class="form-control" type="text" 
+                    name="nome_medico" id="nome_medico"
+                    placeholder="NOME DO MÉDICO">
+
+                    <label for="email_medico"></label>
+                    <input class="form-control" type="text" 
+                    name="email_medico" id="email_medico"
+                    placeholder="EMAIL DO MÉDICO">
+
+                    <label for="telefone_medico"></label>
+                    <input class="form-control" type="text" 
+                    name="telefone_medico" id="telefone_medico"
+                    placeholder="TELEFONE DO MÉDICO">
+
+                    <label for="celular_medico"></label>
+                    <input class="form-control" type="text" 
+                    name="celular_medico" id="celular_medico"
+                    placeholder="CELULAR DO MÉDICO">
+
+                    <label for="tblEspecialidadeId"></label>
+                    <input class="form-control" type="text" 
+                    name="tblEspecialidadeId" id="tblEspecialidadeId"
+                    placeholder="CODIGO MÉDICO">
+
+
+                    <!-- <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle mt-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Especialidades
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#"></a></li>
+                          <li><a class="dropdown-item" href="#"></a></li>
+                          <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                      </div> -->
+
+
+                
+                    <div>
+                    <button class="btn btn-success mt-2">CADATRAR</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<%- include('../partials/footer.ejs') %>
+
+</html>
